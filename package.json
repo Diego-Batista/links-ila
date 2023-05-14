@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
@@ -11,6 +12,8 @@
     "@radix-ui/react-icons": "^1.2.0",
     "@tailwindcss/line-clamp": "^0.4.2",
     "clsx": "^1.2.1",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.2",
     "framer-motion": "^10.2.3",
     "next": "latest",
     "next-themes": "^0.2.1",
@@ -21,6 +24,7 @@
     "swiper": "^9.1.0"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",

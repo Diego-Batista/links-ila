@@ -2,32 +2,29 @@ import { Transition } from "@headlessui/react";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { Cross1Icon } from "@radix-ui/react-icons";
 import { clsx } from "clsx";
-import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { FormEvent, Fragment, useState } from "react";
+import { FormEvent, Fragment, useState } from "react";
 import ButtonDialog from "./ButtonDialog";
 
-
-
 interface DialogProps {
-    description?: string
-    title?: string
+  description?: string;
+  title?: string;
 }
 
 const Dialog = ({ description, title }: DialogProps) => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  let [isOpen, setIsOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   const router = useRouter();
 
- function handleForm(e: FormEvent) {  
-  e.preventDefault()
+  function handleForm(e: FormEvent) {
+    e.preventDefault();
     router.push(
       `https://api.whatsapp.com/send?phone=5571993009032&text=Olá meu me chamo ${name} gostaria de agendar uma consulta, ${title} meu e-mail: ${email} e telefone para contato ${phone}`
     );
- }
+  }
 
   return (
     <DialogPrimitive.Root open={isOpen} onOpenChange={setIsOpen}>
@@ -146,16 +143,19 @@ const Dialog = ({ description, title }: DialogProps) => {
                   />
                 </fieldset>
                 <div className="mt-4 flex justify-end">
-                  <button type="submit" className={clsx(
+                  <button
+                    type="submit"
+                    className={clsx(
                       "inline-flex select-none justify-center rounded-md px-4 py-2 text-sm font-medium",
                       "bg-[#3D1549] text-white hover:bg-purple-700 dark:bg-purple-700 dark:text-gray-100 dark:hover:bg-purple-600",
                       "border border-transparent",
                       "focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75"
-                    )}>Confirmar</button>
+                    )}
+                  >
+                    Confirmar
+                  </button>
                 </div>
               </form>
-
-            
 
               <DialogPrimitive.Close
                 className={clsx(
@@ -174,3 +174,5 @@ const Dialog = ({ description, title }: DialogProps) => {
 };
 
 export { Dialog };
+// eslint-disable-next-line prettier/prettier
+
