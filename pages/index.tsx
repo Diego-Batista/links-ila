@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import { BiBookAlt } from "react-icons/bi";
 import { HiOutlineTicket } from "react-icons/hi";
 import { Button } from "../components/Button";
 import { Header } from "../components/Header";
@@ -66,11 +65,11 @@ export default function Home() {
                 route={`/cupons`}
                 icon={<HiOutlineTicket size={20} />}
               />
-              <Button
+              {/* <Button
                 label="E-books"
                 route={`/ebooks`}
                 icon={<BiBookAlt size={20} />}
-              />
+              /> */}
             </motion.div>
           </div>
         </div>
