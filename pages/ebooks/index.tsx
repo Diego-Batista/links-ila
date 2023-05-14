@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { TbCloudDownload } from 'react-icons/tb';
 import Higiene from "../../public/higiene.png";
-import Lanches from "../../public/lanches.png";
+import Lanche from "../../public/lanche.png";
 import { Header } from "../components/Header";
 
 
@@ -42,7 +42,7 @@ export default function Ebooks() {
 
                     <CardEbooks
                         link="https://drive.google.com/file/d/13gPkE3A5V9vxNOTv5PJ9QqACUF_QQiCW/view?usp=share_link"
-                        mainImage={Lanches}
+                        mainImage={Lanche}
                         title="Parceiros do Intestino"
                         description="Cansado de sintomas como: cansaço, fadiga extrema, dor de cabeça, intestino preguiçoso, gases, azia e gordura abdominal?"
                         textBtn="download"
