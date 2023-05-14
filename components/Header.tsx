@@ -54,9 +54,9 @@ export function Header() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="flex h-10 items-center justify-center space-x-2 font-sub-title text-gray-500 dark:text-gray-200 text-lg text-center -mt-2 mb-4">
-          <span className="">Nutricionista</span>
-          <span>Ortomolecular</span>
+        <div className="flex h-10 items-center justify-center space-x-2 font-sub-title text-gray-500 dark:text-gray-200 text-base text-center -mt-2 mb-4">
+          <span className="">Nutrição funcional</span>
+          <span>e 0rtomolecular</span>
         </div>
       </motion.div>
 
