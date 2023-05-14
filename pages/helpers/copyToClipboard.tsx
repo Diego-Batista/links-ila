@@ -1,6 +1,6 @@
 
 
-export const copyToClipboard = (coupon) => {
+export const copyToClipboard = (coupon: string) => {
     if (!navigator.clipboard) {
       return;
     }
