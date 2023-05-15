@@ -13,6 +13,19 @@ export default function Home() {
       <NextSeo
         title="Links Ila | Nutricionista: Ila Bittencourt"
         description="Nutrição funcional e ortomolecular, agende sua consulta."
+        openGraph={{
+          title: "Links Ila | Nutricionista: Ila Bittencourt",
+          description:
+            "Nutrição funcional e ortomolecular, agende sua consulta.",
+          images: [
+            {
+              url: "https://www.sosdocancer.com.br/wp-content/uploads/2021/02/imagens_842020940531-1024x580.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
       />
       <Head>
         <link rel="icon" href="/favicon.ico" />
