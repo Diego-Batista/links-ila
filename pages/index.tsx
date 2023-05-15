@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Image from "next/image";
 import { HiOutlineTicket } from "react-icons/hi";
@@ -10,24 +9,24 @@ import Planta from "../public/planta.png";
 export default function Home() {
   return (
     <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
-      <NextSeo
-        // title="Links Ila | Nutricionista: Ila Bittencourt"
-        // description="Nutrição funcional e ortomolecular, agende sua consulta."
-        openGraph={{
-          title: "Links Ila | Nutricionista: Ila Bittencourt",
-          description:
-            "Nutrição funcional e ortomolecular, agende sua consulta.",
-          images: [
-            {
-              url: "https://www.sosdocancer.com.br/wp-content/uploads/2021/02/imagens_842020940531-1024x580.jpg",
-              width: 800,
-              height: 600,
-              alt: "Og Image Alt",
-            },
-          ],
-        }}
-      />
+      {/* <NextSeo
+        title="Links Ila | Nutricionista: Ila Bittencourt"
+        description="Nutrição funcional e ortomolecular, agende sua consulta."
+        additionalMetaTags={}
+      /> */}
       <Head>
+        <title>Links Ila | Nutricionista: Ila Bittencourt</title>
+        <meta
+          name="description"
+          content="Nutricição ortomolecular e integrativa agende sua consulta."
+        />
+        <meta
+          property="og:image"
+          content="https://images.pexels.com/photos/16342420/pexels-photo-16342420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        <meta property="og:image:alt" content="Imagem Nutricionista Ila" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="720" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
