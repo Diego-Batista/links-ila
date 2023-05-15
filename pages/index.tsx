@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Image from "next/image";
 import { HiOutlineTicket } from "react-icons/hi";
@@ -9,13 +10,11 @@ import Planta from "../public/planta.png";
 export default function Home() {
   return (
     <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
+      <NextSeo
+        title="Links Ila | Nutricionista: Ila Bittencourt"
+        description="Nutrição funcional e ortomolecular, agende sua consulta."
+      />
       <Head>
-        <title>Links Ila | Nutricionista: Ila Bittencourt</title>
-        <meta
-          name="descripition"
-          content="Nutrição funcional e ortomolecular"
-        />
-        <meta property="og:image" content="/avatar.jpg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
