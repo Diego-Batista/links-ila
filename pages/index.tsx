@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Image from "next/image";
 import { HiOutlineTicket } from "react-icons/hi";
@@ -9,13 +10,27 @@ import Planta from "../public/planta.png";
 export default function Home() {
   return (
     <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
-      {/* <NextSeo
+      <NextSeo
         title="Links Ila | Nutricionista: Ila Bittencourt"
         description="Nutrição funcional e ortomolecular, agende sua consulta."
-        additionalMetaTags={}
-      /> */}
+        openGraph={{
+          url: "https://www.url.ie/a",
+          title: "Open Graph Title",
+          description: "Open Graph Description",
+          images: [
+            {
+              url: "https://www.example.ie/og-image-01.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+              type: "image/jpeg",
+            },
+          ],
+          siteName: "SiteName",
+        }}
+      />
       <Head>
-        <title>Links Ila | Nutricionista: Ila Bittencourt</title>
+        {/* <title>Links Ila | Nutricionista: Ila Bittencourt</title>
         <meta
           name="description"
           content="Nutricição ortomolecular e integrativa agende sua consulta."
@@ -26,7 +41,7 @@ export default function Home() {
         />
         <meta property="og:image:alt" content="Imagem Nutricionista Ila" />
         <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="720" />
+        <meta property="og:image:height" content="720" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

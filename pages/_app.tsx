@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           type: "website",
           locale: "pt_BR",
           url: "https://links-ila.vercel.app/",
-          siteName: "Link Nutricionista Ila Bittencourt",
+          siteName: "Links Nutricionista Ila Bittencourt",
         }}
       />
       <Layout />
