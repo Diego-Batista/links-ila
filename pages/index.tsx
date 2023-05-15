@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
       <NextSeo
-        title="Links Ila | Nutricionista: Ila Bittencourt"
-        description="Nutrição funcional e ortomolecular, agende sua consulta."
+        // title="Links Ila | Nutricionista: Ila Bittencourt"
+        // description="Nutrição funcional e ortomolecular, agende sua consulta."
         openGraph={{
           title: "Links Ila | Nutricionista: Ila Bittencourt",
           description:
