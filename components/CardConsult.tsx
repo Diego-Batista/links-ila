@@ -18,7 +18,7 @@ export function CardConsult() {
         height={600}
       />
 
-      <div className="flex justify-center items-center flex-col px-10 py-5 mt-9">
+      <div className="flex justify-center items-center flex-col px-10 py-5 mt-11">
         <Header />
       </div>
 

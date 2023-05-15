@@ -10,7 +10,12 @@ export default function Home() {
   return (
     <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
       <Head>
-        <title>Ila Links</title>
+        <title>Links Ila | Nutricionista: Ila Bittencourt</title>
+        <meta
+          name="descripition"
+          content="Nutrição funcional e ortomolecular"
+        />
+        <meta property="og:image" content="/avatar.jpg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
