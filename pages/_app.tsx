@@ -9,6 +9,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <DefaultSeo
+        title="Links Ila | Nutricionista: Ila Bittencourt"
+        description="Nutrição funcional e ortomolecular, agende sua consulta."
         openGraph={{
           type: "website",
           locale: "pt_BR",

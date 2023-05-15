@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
+import Head from "next/head";
 import Image from "next/image";
 import { HiOutlineTicket } from "react-icons/hi";
 import { Button } from "../components/Button";
@@ -22,13 +23,17 @@ export default function Home() {
               width: 800,
               height: 600,
               alt: "Og Image Alt",
-              type: "image/jpeg",
+              type: "image/jpg",
             },
           ],
           siteName: "SiteName",
         }}
       />
       <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
         <div className="w-full relative py-2 bg-[#D7BBAC] dark:bg-[#3D1549] overflow-hidden">
           <motion.div
             className="box"
