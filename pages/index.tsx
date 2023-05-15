@@ -13,27 +13,11 @@ export default function Home() {
       <NextSeo
         title="Links Ila | Nutricionista: Ila Bittencourt"
         description="Nutrição funcional e ortomolecular, agende sua consulta."
-        openGraph={{
-          url: "https://www.url.ie/a",
-          title: "Open Graph Title",
-          description: "Open Graph Description",
-          images: [
-            {
-              url: "https://www.example.ie/og-image-01.jpg",
-              width: 800,
-              height: 600,
-              alt: "Og Image Alt",
-              type: "image/jpg",
-            },
-          ],
-          siteName: "SiteName",
-        }}
       />
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
-        <Head>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-
         <div className="w-full relative py-2 bg-[#D7BBAC] dark:bg-[#3D1549] overflow-hidden">
           <motion.div
             className="box"
