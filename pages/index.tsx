@@ -13,6 +13,20 @@ export default function Home() {
       <NextSeo
         title="Links Ila | Nutricionista: Ila Bittencourt"
         description="Nutrição funcional e ortomolecular, agende sua consulta."
+        openGraph={{
+          url: "https://links-ila.vercel.app/",
+          title: "Links Nutricionista Ila Bittencourt",
+          description:
+            "Nutrição funcional e ortomolecular, agende sua consulta.",
+          images: [
+            {
+              url: "/avatar.jpg",
+              width: 800,
+              height: 420,
+              alt: "Nutricionista Ila Bittencourt",
+            },
+          ],
+        }}
       />
       <Head>
         <link rel="icon" href="/favicon.ico" />
