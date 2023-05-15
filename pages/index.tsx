@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
-import Head from "next/head";
 import Image from "next/image";
 import { HiOutlineTicket } from "react-icons/hi";
 import { Button } from "../components/Button";
@@ -30,22 +29,6 @@ export default function Home() {
         }}
       />
       <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
-        <Head>
-          {/* <title>Links Ila | Nutricionista: Ila Bittencourt</title>
-        <meta
-          name="description"
-          content="Nutricição ortomolecular e integrativa agende sua consulta."
-        />
-        <meta
-          property="og:image"
-          content="https://images.pexels.com/photos/16342420/pexels-photo-16342420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        />
-        <meta property="og:image:alt" content="Imagem Nutricionista Ila" />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="720" /> */}
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-
         <div className="w-full relative py-2 bg-[#D7BBAC] dark:bg-[#3D1549] overflow-hidden">
           <motion.div
             className="box"
