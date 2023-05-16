@@ -81,7 +81,7 @@ export default function Home() {
                 <Button
                   label="Cupons"
                   route={`/cupons`}
-                  icon={<HiOutlineTicket size={20} />}
+                  icon={<HiOutlineTicket size={24} />}
                 />
                 {/* <Button
                 label="E-books"

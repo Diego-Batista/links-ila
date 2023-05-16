@@ -15,7 +15,7 @@ export function Button({ label, route, icon, target }: ButtonProps) {
         <Link
           target={target}
           href={`${route}`}
-          className="flex items-center justify-center w-full px-6 py-4 gap-2 mb-6 text-lg text-white font-medium dark:text-[#3D1549] bg-[#3D1549] dark:bg-[#D7BBAC] shadow-md shadow-zinc-800 rounded-xl hover:brightness-125 transition-all duration-300 ease"
+          className="flex items-center justify-center w-full px-6 py-4 gap-2 mb-6 text-lg text-white font-semibold dark:text-[#3D1549] bg-[#3D1549] dark:bg-[#D7BBAC] shadow-md shadow-zinc-800 rounded-xl hover:brightness-125 transition-all duration-300 ease"
         >
           <span>{icon}</span>
           <span>{label}</span>
