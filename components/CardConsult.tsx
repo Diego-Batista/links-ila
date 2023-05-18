@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { HiOutlineTicket } from "react-icons/hi";
+import { IoTicketSharp } from "react-icons/io5";
 import "swiper/css";
 import Planta from "../public/planta.png";
 import { CouponCard } from "./CouponCard";
@@ -22,8 +22,8 @@ export function CardConsult() {
         <Header />
       </div>
 
-      <div className="w-full flex items-center justify-center space-x-4 text-gray-500 dark:text-gray-200">
-        <HiOutlineTicket size={40} className="" />
+      <div className="w-full flex items-center justify-center space-x-3 text-gray-400 dark:text-gray-200">
+        <IoTicketSharp size={40} className="" />
         <h3 className="text-4xl">Cupons</h3>
       </div>
 

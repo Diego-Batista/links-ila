@@ -31,7 +31,7 @@ export function CouponCard({ url, discount, site, coupon }: Props) {
   return (
     <div className="w-full flex flex-col items-center justify-center border-2 border-[#a87b05] border-dashed rounded-xl p-2">
       <Link target="_blank" href={url}>
-        <span className="pr-2 text-lg text-white  font-semibold">{site}</span>
+        <span className="pr-2 text-lg text-gray-400 hover:text-gray-300 dark:text-gray-100 underline dark:hover:text-gray-50  font-semibold transition-colors duration-300 ease">{site}</span>
       </Link>
       <button
         onClick={handleCopy}

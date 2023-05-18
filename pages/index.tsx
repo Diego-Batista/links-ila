@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Image from "next/image";
-import { HiOutlineTicket } from "react-icons/hi";
+import { BsTicketPerforatedFill } from "react-icons/bs";
 import { Button } from "../components/Button";
 import { Header } from "../components/Header";
 import Planta from "../public/planta.png";
@@ -32,7 +32,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
+      
         <div className="w-full relative py-2 bg-[#D7BBAC] dark:bg-[#3D1549] overflow-hidden">
+  
           <motion.div
             className="box"
             initial={{ x: -100, y: -16, opacity: 0 }}
@@ -72,16 +74,18 @@ export default function Home() {
                   target="_blank"
                   label="Consulta presencial"
                   route={`https://wa.me/5571993009032?text=Ol%C3%A1,+gostaria+de+agendar+uma+consulta+presencial`}
+                  // icon={<RiWhatsappFill size={24} />}
                 />
                 <Button
                   target="_blank"
                   label="Consulta on-line"
                   route={`https://wa.me/5571993009032?text=Ol%C3%A1,+gostaria+de+agendar+uma+consulta+on-line`}
+                  // icon={<RiWhatsappFill size={24} />}
                 />
                 <Button
                   label="Cupons"
                   route={`/cupons`}
-                  icon={<HiOutlineTicket size={24} />}
+                  icon={<BsTicketPerforatedFill size={24} />}
                 />
                 {/* <Button
                 label="E-books"

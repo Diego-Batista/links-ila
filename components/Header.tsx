@@ -54,7 +54,7 @@ export function Header() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="flex h-10 items-center justify-center space-x-2 font-sub-title text-gray-500 dark:text-gray-200 text-base text-center -mt-2 mb-4">
+        <div className="flex h-10 items-center justify-center space-x-2 font-sub-title text-gray-400 dark:text-gray-200 text-sm md:text-base text-center -mt-2 mb-4 ">
           <span className="">Nutrição funcional</span>
           <span>e 0rtomolecular</span>
         </div>
@@ -73,9 +73,10 @@ export function Header() {
         <Link
           target="_blank"
           href="https://www.instagram.com/nutricionista_ila"
-          className=""
+          className="flex flex-col items-center justify-center"
         >
           <BsInstagram size={30} className="mb-2 text-[#a87b05]" />
+          <span className="text-sm font-medium text-[#a87b05] mb-2">Siga-me no instagram</span>
         </Link>
       </motion.div>
     </div>
