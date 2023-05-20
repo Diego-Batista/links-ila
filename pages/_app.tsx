@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           siteName: "Links Nutricionista Ila Bittencourt",
         }}
       />
-      <Layout />
       <NextNProgress
         color="#a87b05"
         startPosition={0.3}
@@ -26,7 +25,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         height={4}
         showOnShallow={true}
       />
-      <Component {...pageProps} />
+        <Layout />
+        <Component {...pageProps} />
     </ThemeProvider>
   );
 }

@@ -31,17 +31,19 @@ export function CouponCard({ url, discount, site, coupon }: Props) {
   return (
     <div className="w-full flex flex-col items-center justify-center border-2 border-[#a87b05] border-dashed rounded-xl p-2">
       <Link target="_blank" href={url}>
-        <span className="pr-2 text-lg text-gray-400 hover:text-gray-300 dark:text-gray-100 underline dark:hover:text-gray-50  font-semibold transition-colors duration-300 ease">{site}</span>
+        <span className="pr-2 text-lg md:text-2xl text-gray-500 hover:text-gray-300 dark:text-gray-100 underline dark:hover:text-gray-50  font-semibold transition-colors duration-300 ease">
+          {site}
+        </span>
       </Link>
       <button
         onClick={handleCopy}
         className="flex items-center text-white gap-2 mt-2 bg-[#a87b05] p-2 rounded-xl transition-all duration-300 ease"
       >
-        <div className="flex items-center text-xs bg-[#d3aa44] py-1 px-2 rounded-lg">
-          <CiDiscount1 size={24} />
+        <div className="flex items-center text-xs md:text-lg bg-[#d3aa44] py-1 px-2 rounded-lg">
+          <CiDiscount1 className="w-6 h-6 md:w-8 md:h-8 "/>
           {discount}
         </div>
-        <p className="uppercase">{coupon}</p>
+        <p className="uppercase md:text-lg">{coupon}</p>
         <button
           type="button"
           onClick={handleCopy}

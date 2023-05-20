@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
-import Image from "next/image";
-import { BsTicketPerforatedFill } from "react-icons/bs";
+import { HiTicket } from "react-icons/hi2";
 import { Button } from "../components/Button";
 import { Header } from "../components/Header";
-import Planta from "../public/planta.png";
 
 export default function Home() {
   return (
@@ -34,32 +32,11 @@ export default function Home() {
       <div className="h-screen w-screen bg-[#D7BBAC] dark:bg-[#3D1549] font-sub-title">
       
         <div className="w-full relative py-2 bg-[#D7BBAC] dark:bg-[#3D1549] overflow-hidden">
-  
-          <motion.div
-            className="box"
-            initial={{ x: -100, y: -16, opacity: 0 }}
-            animate={{ x: 0, y: -16, opacity: 1 }}
-            // eslint-disable-next-line react/jsx-no-duplicate-props
-            transition={{
-              duration: 0.8,
-              delay: 0.3,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
-            <Image
-              priority
-              alt=""
-              src={Planta}
-              className="absolute -top-4 -left-16 max-w-[350px]"
-              width={800}
-              height={600}
-            />
-          </motion.div>
 
-          <div className="w-full flex flex-col px-5 py-5 mt-10 z-50 md:items-center">
+          <div className="h-full w-full flex flex-col px-5 py-5  z-50 md:items-center">
             <Header />
 
-            <div className="flex flex-col w-full md:w-1/2 xl:w-1/3 mt-2 md:space-y-4 ">
+            <div className="flex flex-col w-full md:w-[80%] xl:w-1/3 mt-2 md:mt-4 md:space-y-4 ">
               <motion.div
                 className="box"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -85,7 +62,7 @@ export default function Home() {
                 <Button
                   label="Cupons"
                   route={`/cupons`}
-                  icon={<BsTicketPerforatedFill size={24} />}
+                  icon={<HiTicket className="w-7 h-7 md:w-11 md:h-11" />}
                 />
                 {/* <Button
                 label="E-books"

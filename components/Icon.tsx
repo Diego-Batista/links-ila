@@ -9,9 +9,9 @@ export function Icon({ id }: Props) {
   return (
     <div>
       {id === "copy" ? (
-        <RiFileCopyLine size={20} />
+        <RiFileCopyLine className="w-5 h-5 md:w-7 md:h-7" />
       ) : (
-        <BiCheckDouble size={20} />
+        <BiCheckDouble className="w-5 h-5 md:w-7 md:h-7" />
       )}
     </div>
   );
