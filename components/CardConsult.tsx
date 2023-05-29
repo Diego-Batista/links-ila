@@ -30,7 +30,7 @@ export function CardConsult() {
         >
           <CouponCard
             url="https://equaliv.com.br/"
-            discount="15%"
+            discount="15"
             site="equaliv.com.br"
             coupon="ilanutri15"
           />
@@ -48,9 +48,27 @@ export function CardConsult() {
         >
           <CouponCard
             url="https://www.duxnutrition.com/"
-            discount="20%"
+            discount="20"
             site="duxnutrition.com"
             coupon="pacientesilambs"
+          />
+        </motion.div>
+
+        <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
+          <CouponCard
+            url="🛍www.seivacosmeticos.com.br/"
+            discount="15"
+            site="seivacosmeticos.com.br"
+            coupon="ILANUTRI"
           />
         </motion.div>
       </div>

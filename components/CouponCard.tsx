@@ -41,7 +41,7 @@ export function CouponCard({ url, discount, site, coupon }: Props) {
       >
         <div className="flex items-center text-xs md:text-lg bg-[#d3aa44] py-1 px-2 rounded-lg">
           <CiDiscount1 className="w-6 h-6 md:w-8 md:h-8 "/>
-          {discount}
+          {discount}%
         </div>
         <p className="uppercase md:text-lg">{coupon}</p>
         <button
