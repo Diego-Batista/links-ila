@@ -18,23 +18,6 @@ export function CardConsult() {
       </div>
 
       <div className="w-full md:w-[80%] xl:w-1/3 px-4 mt-6 space-y-4">
-        <motion.div
-          className="box"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.9,
-            delay: 0.3,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-        >
-          <CouponCard
-            url="https://equaliv.com.br/"
-            discount="15"
-            site="equaliv.com.br"
-            coupon="ilanutri15"
-          />
-        </motion.div>
 
         <motion.div
           className="box"
@@ -69,6 +52,40 @@ export function CardConsult() {
             discount="15"
             site="seivacosmeticos.com.br"
             coupon="ILANUTRI"
+          />
+        </motion.div>
+        <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
+          <CouponCard
+            url="https://equaliv.com.br/"
+            discount="15"
+            site="equaliv.com.br"
+            coupon="ilanutri15"
+          />
+        </motion.div>
+        <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.7,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+        >
+          <CouponCard
+            url="https://www.nutrify.com.br/"
+            discount="10"
+            site="www.nutrify.com.br"
+            coupon="IM845"
           />
         </motion.div>
       </div>
