@@ -59,7 +59,7 @@ export function Header() {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <h1 className="text-transparent bg-clip-text bg-gradient-to-bl dark:from-[#ffe998] dark:to-[#57370d] from-[#C9B995] to-[#57370d] text-5xl md:text-7xl text-center mt-4 font-sub-title02 font-medium">
+        <h1 className="text-transparent bg-clip-text bg-gradient-to-bl dark:from-[#ffe998] dark:to-[#57370d] from-[#C9B995] to-[#57370d] text-5xl md:text-7xl  text-center mt-5 font-title font-medium">
           Ila Bittencourt
         </h1>
       </motion.div>
@@ -76,8 +76,8 @@ export function Header() {
         }}
       >
         <div className="flex h-10 items-center justify-center space-x-2 font-sub-title text-gray-400 dark:text-gray-200 text-sm md:text-xl text-center -mt-2 mb-4 ">
-          <span className="">Nutrição funcional</span>
-          <span>e 0rtomolecular</span>
+          <span className="">Nutrição funcional e ortomolecular</span>
+         
         </div>
       </motion.div>
 
