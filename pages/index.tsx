@@ -65,6 +65,11 @@ export default function Home() {
                   icon={<HiTicket className="w-7 h-7 md:w-11 md:h-11" />}
                 />
                 {/* <Button
+                  label="Quiz da Nutri"
+                  route={`/quiz`}
+                  icon={<MdQuestionAnswer className="w-7 h-7 md:w-11 md:h-11" />}
+                /> */}
+                {/* <Button
                 label="E-books"
                 route={`/ebooks`}
                 icon={<BiBookAlt size={20} />}

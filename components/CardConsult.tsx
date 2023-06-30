@@ -48,10 +48,10 @@ export function CardConsult() {
           }}
         >
           <CouponCard
-            url="🛍www.seivacosmeticos.com.br/"
-            discount="15"
+            url="https://www.seivacosmeticos.com.br"
+            discount="10"
             site="seivacosmeticos.com.br"
-            coupon="ILANUTRI"
+            coupon="ILANUTRI10"
           />
         </motion.div>
         <motion.div

@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { BsInstagram } from "react-icons/bs";
 import Avatar from "../public/avatar.jpg";
 import Planta from "../public/planta.png";
 
 export function Header() {
+  const router = useRouter()
   return (
     <div className="flex items-center justify-center flex-col z-40 mt-12">
       <motion.div
@@ -81,25 +83,28 @@ export function Header() {
         </div>
       </motion.div>
 
-      <motion.div
-        className="box"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.5,
-          delay: 0.3,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
-      >
-        <Link
-          target="_blank"
-          href="https://www.instagram.com/nutricionista_ila"
-          className="flex flex-col items-center justify-center"
+      {router.asPath === '/' && 
+        <motion.div
+          className="box"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
         >
-          <BsInstagram className="w-7 h-7 md:w-11 md:h-11 mb-2 text-[#a87b05]" />
-          <span className="text-sm md:text-lg font-medium text-[#a87b05] mb-2">Siga-me no instagram</span>
-        </Link>
-      </motion.div>
+          <Link
+            target="_blank"
+            href="https://www.instagram.com/nutricionista_ila"
+            className="flex flex-col items-center justify-center"
+          >
+            <BsInstagram className="w-7 h-7 md:w-11 md:h-11 mb-2 text-[#a87b05]" />
+            <span className="text-sm md:text-lg font-medium text-[#a87b05] mb-2">Siga-me no instagram</span>
+          </Link>
+        </motion.div>
+
+      }
     </div>
   );
 }
