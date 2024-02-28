@@ -60,6 +60,12 @@ export default function Home() {
                   // icon={<RiWhatsappFill size={24} />}
                 />
                 <Button
+                  target="_blank"
+                  label="Consulta por plano"
+                  route={`https://api.whatsapp.com/send?phone=557191951011&text=Ol%C3%A1%20bom%20dia!%20gostaria%20de%20agendar%20uma%20consulta%20por%20plano%20para%20Dra.%20Ila.`}
+                  // icon={<RiWhatsappFill size={24} />}
+                />
+                <Button
                   label="Cupons"
                   route={`/cupons`}
                   icon={<HiTicket className="w-7 h-7 md:w-11 md:h-11" />}
