@@ -62,7 +62,7 @@ export default function Home() {
                 <Button
                   target="_blank"
                   label="Consulta por plano"
-                  route={`https://api.whatsapp.com/send?phone=557191951011&text=Ol%C3%A1%20bom%20dia!%20gostaria%20de%20agendar%20uma%20consulta%20por%20plano%20para%20Dra.%20Ila.`}
+                  route={`https://api.whatsapp.com/send?phone=557191951011&text=Ol%C3%A1,%20gostaria%20de%20agendar%20uma%20consulta%20com%20Dra.%20Ila%20Bittencourt!`}
                   // icon={<RiWhatsappFill size={24} />}
                 />
                 <Button
